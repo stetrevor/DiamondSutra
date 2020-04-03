@@ -5,7 +5,9 @@
         >上一章</router-link
       >
       <router-link to="/">目录</router-link>
-      <router-link :to="`/chapter/${chapterNum + 1}`" v-if="chapterNum < chapterCount"
+      <router-link
+        :to="`/chapter/${chapterNum + 1}`"
+        v-if="chapterNum < chapterCount"
         >下一章</router-link
       >
     </div>
@@ -17,7 +19,9 @@
         >上一章</router-link
       >
       <router-link to="/">目录</router-link>
-      <router-link :to="`/chapter/${chapterNum + 1}`" v-if="chapterNum < chapterCount"
+      <router-link
+        :to="`/chapter/${chapterNum + 1}`"
+        v-if="chapterNum < chapterCount"
         >下一章</router-link
       >
     </div>
@@ -57,9 +61,9 @@ export default {
 
   data() {
     return {
-      chapterCount: 1
+      chapterCount: 1,
     }
-  }
+  },
 }
 </script>
 
