@@ -11,9 +11,10 @@
 </template>
 
 <script>
+import { titles } from '@/data.json'
+
 export default {
   data() {
-    const titles = ['全文']
     return {
       chapters: titles.map((t, i) => ({
         route: `/chapter/${i + 1}`,

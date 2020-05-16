@@ -30,7 +30,7 @@
 
 <script>
 import BaseChapter from '@/components/BaseChapter/BaseChapter'
-
+import { titles } from '@/data.json'
 import { bookmark } from '@/storage'
 
 export default {
@@ -61,14 +61,14 @@ export default {
 
   data() {
     return {
-      chapterCount: 1,
+      chapterCount: titles.length,
     }
   },
 }
 </script>
 
 <style lang="scss">
-@import '@/scss/_mixins';
+@import '@/scss/theme';
 
 .chapter {
   margin: 1.999em 0;
